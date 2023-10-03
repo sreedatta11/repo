@@ -1,25 +1,174 @@
-body {
-    font-family: Roboto;
-    line-height: 1.6;
-    background-color: grey;
-    border-radius: 10px;
+/* Flexbox Part 1 */
+
+#flex-section1 ul {
+	list-style-type: none;
+	padding : 10px;
+	margin : 8px;
+	background-color: Red;
+    float : left
 }
 
-header {
-    background-color: #f4f4f4;
-    padding: 20px;
+/* end Flexbox Part 1 */
+
+
+/* Flexbox Part 2 */
+
+#flex-section2 ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#flex-section2 li {
+    flex:1;
+    padding: 10px;
+    border: 1px solid grey;
+    margin:6px;
     text-align: center;
+}
+
+#flex-section2 .item1 {
+    background-color: grey;
+    font-size: 15px;
     font-family: Roboto;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text
-    font-family: Roboto;
-}
-.heading{
+#flex-section2 .item2 {
     background-color: grey;
+    font-size: 15px;
     font-family: Roboto;
-    border-radius: 10px;
 }
+
+#flex-section2 .item3 {
+    background-color: grey;
+    font-size: 15px;
+    font-family: Roboto;
+}
+
+/* end Flexbox Part 2 */
+
+
+/* Flexbox Part 3 */
+
+#flex-section3 .box {
+    width: 300px;
+    padding: 20px;
+    border : 1px solid grey;
+    text-align: center;
+    background-color: skyblue;
+}
+
+#flex-section3 .tags ul {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height : 100vh;
+    border: 1px solid grey;
+    padding:2px;
+    margin : 1px;
+    border-radius: 5px;
+    list-style-type: none;
+
+}
+
+/* end Flexbox Part 3 */
+
+
+/* Grid Part 1 */
+
+#grid-section1 .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    gap: 10px; 
+    padding: 20px;
+    background-color: #grey;
+    border: 1px solid grey;
+}
+
+/* end Grid Part 1 */
+
+
+/* Grid Part 2 */
+
+#grid-section2 .gridboxblue {
+    background-color: blue;
+    border : 2px solid blue;
+    color: white;
+    grid-column: 3;
+    grid-row: 3;  
+}
+
+#grid-section2 .gridboxred {
+    background-color: red;
+    border : 2px solid red;
+    color: white;
+    grid-column: 1;
+    grid-row: 4;
+}
+
+/* end Grid Part 2 */
+
+
+/* Grid Part 3 */
+
+#grid-section3 .grid {
+    display: grid;
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+#grid-section3 .box1 {
+    background-color: grey;
+    border-radius: 5px;
+    border : 1px solid grey;
+    grid-column: 6;
+    grid-row: 1;
+}
+
+#grid-section3 .box2 {
+    background-color: grey;
+    border-radius: 5px;
+    border : 1px solid grey;
+    grid-column: 2;
+    grid-row: 4;
+}
+
+#grid-section3 .box3 {
+    background-color: grey;
+    border-radius: 5px;
+    border : 1px solid grey;
+    grid-column: 4;
+    grid-row: 4;
+}
+
+#grid-section3 .box4 {
+    background-color: grey;
+    border-radius: 5px;
+    border : 1px solid grey;
+    grid-column: 1;
+    grid-row: 6;
+}
+
+/* end Grid Part 3 */
+
+
+/* Transition Part */
+
+#transition-section .box a {
+	display: inline-block;
+	background-color: #ccc;
+	color: #000;
+	padding: 20px;
+	text-decoration: none;
+
+
+}
+
+#transition-section .box a:hover {
+	background-color: #cc0000;
+	color: #fff;
+
+
+}
+
+/* end Transition Part */
